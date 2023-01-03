@@ -317,16 +317,19 @@ return [
         [
             'text'        => 'Dashboard',
             'url'         => 'admin/dashboard',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => '',
             'label'       => '2',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Catalog',
             'url'         => 'admin/catalog',
-            'icon'        => 'fa-solid fa-box',
+            'icon'        => '',
             'label'       => 2,
             'label_color' => 'success',
+        ],
+        [
+            'url'         => 'admin/catalog/create'
         ],
         ['header' => 'account_settings'],
         [

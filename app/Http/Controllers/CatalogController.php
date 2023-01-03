@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use GuzzleHttp\Client;
 use notify;
 use App\Models\Catalog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Spatie\FlareClient\View;
 use Illuminate\Support\Facades\Storage;
 
@@ -12,7 +14,18 @@ class CatalogController extends Controller
 {
     public function index()
     {
-        return view('admin.catalog.index');
+        // $client = new Client();
+        // $url = "http://localhost/api/catalogs";
+
+        // $respone = $client->request('GET', $url, [
+        //     'verify' => false,
+        // ]);
+
+        // $responeBody = json_decode($respone->getBody());
+        // return Http::dd()->get('http://localhost/api/catalogs');
+        // dd($responeBody);
+        $catalogs = Catalog::latest()->paginate(5);
+        return view('admin.catalog.index', compact('catalogs'));
     }
 
     public function create()

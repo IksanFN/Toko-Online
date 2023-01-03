@@ -8,6 +8,6 @@ class ShowCatalog extends Component
 {
     public function render()
     {
-        return view('livewire.show-catalog');
+        return view('admin.show-catalog');
     }
 }
