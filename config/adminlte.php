@@ -317,14 +317,14 @@ return [
         [
             'text'        => 'Dashboard',
             'url'         => 'admin/dashboard',
-            'icon'        => '',
+            'icon'        => 'fas fa-fw fa-file',
             'label'       => '2',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Catalog',
             'url'         => 'admin/catalog',
-            'icon'        => '',
+            'icon'        => 'fas fa-fw fa-file',
             'label'       => 2,
             'label_color' => 'success',
         ],

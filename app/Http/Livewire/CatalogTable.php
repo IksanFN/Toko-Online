@@ -9,7 +9,7 @@ class CatalogTable extends Component
 {
     public function render()
     {
-        // $catalogs = Catalog::latest()->paginate(5);
+        
         return view('admin.catalog.index');
     }
 }

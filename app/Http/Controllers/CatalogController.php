@@ -98,7 +98,7 @@ class CatalogController extends Controller
             
             // Upload new image
             $image = $request->file('image');
-            $image->stoareAs('public/catalog'.$image->hashName());
+            $image->storeAs('public/catalog', $image->hashName());
 
             // Delete Old Image 
             Storage::delete('public/catalog'.$catalog->image);
